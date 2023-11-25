@@ -1,54 +1,103 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <meta charset="UTF-8">
- <title>Mon Portfolio</title>
+  <title>Personal</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
- <header>
-    <h1>Mon Portfolio</h1>
-    <nav>
-	<center>
-<img src="images/photo.jpg" width="300" height="300">
-</center>
 
-      <ul>
-        <li><a href="pageexperiences.html">Parcours académiques</a></li>
-        <li><a href="pagecompetences.html">Compétences</a></li>
-        <li><a href="pagecontact.html">Contact</a></li>
-      </ul>
-	
-   <center>
+<!-- SECTION: Splashscreen -->
+<div class="splashscreen">
+<div class="preloader">
+<span class="preloader__text">Loading</span>
+</div>
+</div>
+<!-- END SECTION: Splashscreen -->
+
+<!-- SECTION: Intro -->
+<header class="header">
+<!-- SECTION: Navigation -->
+<div id="top" class="navigation">
+<div class="navigation__wrapper wrapper--large">
+<a class="navigation__logo logo" href="index.html">Logo</a>
+<nav class="navigation__container">
+<ul class="navigation__list">
+<li><a href="home.html">Home</a></li>
+<li><a href="potfolio.html">Portfolio</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="competences.html">Compétences</a></li>
+</ul>
+</nav>
+
+
+</div>
+</div>
+<!-- END SECTION: Navigation -->
+</header>
+<!-- END SECTION: Intro -->
+<main role="main">
+
+<br>
+<br>
+<br> 
+<br>
+<center>
+        <h1>Haddad Nour elislem</h1>
+        <p>Web Developer</p>
     
-
-    <table border="1">
-        <tbody>
-            <tr>
-                <td><img src="images/0.jpg" alt="Image 1" width="200"></td>
-                <td><img src="images/PP.jpg" alt="Image 2" width="200"></td>
-                <td><img src="images/Q.jpg" alt="Image 3" width="200"></td>
-            </tr>
-        </tbody>
-    </table>
+<img src="img/nounou.jpg" width="300" height="300">
 </center>
-    </nav>
- </header>
+<!-- SECTION: Work -->
+<section id="work" class="work">
+<h2 class="work__heading title">Latest Projects</h2>
+<ul>
+<li><b>Social Media Post Scheduling:</b>
 
- <main>
-    <section>
-      <h2>Bienvenue sur mon portfolio</h2>
-      <p>Ce site web est une présentation de mes compétences et de mes réalisations professionnelles.</p>
-    </section>
+Managed a social media scheduling project, ensuring regular and consistent posts, resulting in a 15% increase in online engagement. </li>
+<li> <b>Event Support:</b>
 
-    <section>
-      <h2>A propos de moi</h2>
-      <p>Je suis Haddad Nour elislem .Je suis passionné par le développement web et la création d'expériences en ligne exceptionnelles. Mon voyage dans le monde du développement a commencé avec la découverte de la puissance du HTML et du CSS, et depuis, je n'ai cessé d'explorer de nouvelles technologies.</p>
-    </section>
- </main>
+Provided support for company events, handling registrations and logistics to ensure smooth execution.</li>
+<li><b>Online Research Project:</b>
 
- <footer>
-    <p>&copy; 2023 - Mon Portfolio</p>
- </footer>
+Conducted online research to gather information for a specific project, providing valuable insights.</li>
+<li><b>Document Formatting:</b>
+
+Formatted and organized documents for team use, making information more accessible.</li>
+
+
+</ul>
+</section>
+<!-- END SECTION: Work -->
+
+<!-- SECTION: Contact -->
+<section id="contact" class="contact">
+<h2 class="contact__heading title">Contact Me</h2>
+<div class="contact__wrapper wrapper--large">
+<div class="contact__visual">
+<img src="img/contact-visual.png" >
+</div>
+<!-- Simple form setup: formspree.io -->
+<form class="contact__form">
+<input class="contact__form-el contact__form-el--name" type="text" placeholder="Your Name" spellcheck="false">
+<input class="contact__form-el contact__form-el--email" type="email" placeholder="Your Email" spellcheck="false">
+<textarea class="contact__form-el contact__form-el--message" placeholder="Your Message"></textarea>
+<input class="contact__form-el contact__form-el--submit" type="submit" value="Send">
+</form>
+</div>
+</section>
+<!-- END SECTION: Contact -->
+</main>
+<!-- SECTION: Footer -->
+<footer class="footer">
+<div class="footer__wrapper wrapper--large">
+<p class="footer__copyright no-margin">&copy; 2022 -Esprit</p>
+
+</div>
+</footer>
+<!-- END SECTION: Footer -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/functions-min.js"></script>
+
 </body>
 </html>
