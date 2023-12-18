@@ -1,79 +1,76 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Personal</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<!-- SECTION: Splashscreen -->
-<!--<div class="splashscreen">
-<div class="preloader">
-<span class="preloader__text">Loading</span>
-</div>
-</div>
-<!-- END SECTION: Splashscreen -->
-
-<!-- SECTION: Intro -->
 <header class="header">
-<!-- SECTION: Navigation -->
-<div id="top" class="navigation">
-<div class="navigation__wrapper wrapper--large">
-<a class="navigation__logo logo" href="contact.html">Contact</a>
-<nav class="navigation__container">
-<ul class="navigation__list">
-
-<li><a href="home.html">Home</a></li>
-<li><a href="potfolio.html">Portfolio</a></li>
-<li><a href="competences.html">Compétences</a></li>
-</ul>
-</nav>
-
-
-</div>
-</div>
-
-
-   
-
-    <section class="contact">
-	<br>
-	<br>
-	<br>
-        <h2>Contact Me</h2>
-
-        <p>Si vous souhaitez me contacter, n'hésitez pas à utiliser les informations ci-dessous :</p>
-
-        <ul>
-            <li>Email: nourelislemhaddad@esprit.tn</li>
-            <li>Phone: (216) 26 459 928 </li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/nour haddad" target="_blank">linkedin.com/in/nour haddad</a></li>
-            <li>GitHub: <a href="https://github.com/Haddad-nour/3b11-haddad-nour-elislem" target="_blank">github.com/nour haddad</a></li>
-            <li>Facebook: <a href="https://www.facebook.com/" target="_blank">nour haddad</a></li>
+  
+  <div id="top" class="navigation">
+    <div class="navigation__wrapper wrapper--large">
+      <a class="navigation__logo logo" href="contact.html">Contact</a>
+      <nav class="navigation__container">
+        <ul class="navigation__list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="competences.html">Compétences</a></li>
         </ul>
-    </section>
-	<!-- SECTION : Contact -->
-		<section id="contact" class="contact">
-			<div class="contact__wrapper wrapper--large">
-				<div class="contact__visual">
-					<img src="img/GGG.jpg" height="200" width="200">
-				</div>
-				<!-- Mise en place d'un formulaire simple : formspree.io -->
-				<form class="contact__form">
-					<input class="contact__form-el contact__form-el--name" type="text" placeholder="Votre Nom" spellcheck="false">
-					<input class="contact__form-el contact__form-el--email" type="email" placeholder="Votre E-mail" spellcheck="false">
-					<textarea class="contact__form-el contact__form-el--message" placeholder="Votre Message"></textarea>
-					<input class="contact__form-el contact__form-el--submit" type="submit" value="Envoyer">
-				</form>
-			</div>
-		</section>
-		<!-- FIN SECTION : Contact -->
+      </nav>
+    </div>
+  </div>
+</header>
 
-    <footer>
-        <p>&copy; 2022-2023 Nour elislem haddad. All rights reserved.</p>
-    </footer>
+<section class="contact">
+  <br>
+  <br>
+  <br>
+  <h2>Contact Me</h2>
+  <p>Si vous souhaitez me contacter, n'hésitez pas à utiliser les informations ci-dessous :</p>
+  <ul>
+    <li>Email: nourelislemhaddad@esprit.tn</li>
+    <li>Phone: (216) 26 459 928</li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/nour haddad" target="_blank">linkedin.com/in/nour haddad</a></li>
+    <li>GitHub: <a href="https://github.com/Haddad-nour/3b11-haddad-nour-elislem" target="_blank">github.com/nour haddad</a></li>
+    <li>Facebook: <a href="https://www.facebook.com/" target="_blank">nour haddad</a></li>
+  </ul>
+</section>
+
+<!-- SECTION: Contact -->
+<section id="contact" class="contact">
+  <div class="contact__wrapper wrapper--large">
+    <div class="contact__visual">
+      <img src="img/GGG.jpg" height="200" width="200">
+    </div>
+    
+    <form class="contact__form" id="contactForm">
+      <input id="name" class="contact__form-el contact__form-el--name" type="text" placeholder="Votre Nom" spellcheck="false">
+      <input id="email" class="contact__form-el contact__form-el--email" type="email" placeholder="Votre E-mail" spellcheck="false">
+      <textarea id="message" class="contact__form-el contact__form-el--message" placeholder="Votre Message"></textarea>
+      <input class="contact__form-el contact__form-el--submit" type="submit" value="Envoyer">
+    </form>
+  </div>
+</section>
+<!-- FIN SECTION : Contact -->
+
+<script>
+  var contactForm = document.getElementById("contactForm");
+
+  contactForm.addEventListener("submit", function (event) {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    if (!name || !email || !message) {
+      alert("Veuillez remplir tous les champs obligatoires.");
+      event.preventDefault(); // Prevent form submission
+    }
+  });
+</script>
+
+<footer>
+  <p>&copy; 2022-2023 Nour elislem haddad. All rights reserved.</p>
+</footer>
 
 </body>
-
 </html>
